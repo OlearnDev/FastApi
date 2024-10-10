@@ -1,4 +1,5 @@
 ---- FastApi ----
+GIT commandes :
 
 cd FastApi
 git init
@@ -15,3 +16,22 @@ git log
 git checkout bf728e670aa5f51cfc47b735d888d302c3f0f359
 git switch -c <new-branch-name>			(revert to a version operation)
 git switch -   		(undo operation)
+
+---------------------- Creer env
+pip install virtualenv  : installer virtualenv
+virtualenv venv  		: Crée un nouvel env nommé venv
+pip install api
+
+.\venv\Scripts\activate	: Active l'env
+pip install fastapi
+pip install uvicorn		: Serveur pour executer api et afficher sur une page web 
+uvicorn api:app --reload : Fournit l'adresse web pour voir le resulat d'execution de l'api
+
+
+--- En cas de souci d'execution de commandes dans powershell:
+Ouvrir powershell en tant que admin
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Set-ExecutionPolicy RemoteSigned
+Get-ExecutionPolicy
+----------------------
+
