@@ -1,0 +1,17 @@
+---- FastApi ----
+
+cd FastApi
+git init
+git add .
+git commit -m "Gestion des API"
+git branch -M main 
+
+git remote add origin git@github.com:OlearnDev/git.python.git
+git push -u origin main
+git checkout -b develop 
+git branch
+
+git log
+git checkout bf728e670aa5f51cfc47b735d888d302c3f0f359
+git switch -c <new-branch-name>			(revert to a version operation)
+git switch -   		(undo operation)
