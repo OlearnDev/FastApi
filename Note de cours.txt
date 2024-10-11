@@ -25,8 +25,9 @@ pip install api
 .\venv\Scripts\activate	: Active l'env
 pip install fastapi
 pip install uvicorn		: Serveur pour executer api et afficher sur une page web 
-uvicorn api:app --reload : Fournit l'adresse web pour voir le resulat d'execution de l'api
-
+uvicorn api:app --reload : Fournit un serveur pour lancer le code dans api.py 
+                            et fournit l'adresse web pour voir le resulat d'execution 
+uvicorn todo:app --reload :
 
 --- En cas de souci d'execution de commandes dans powershell:
 Ouvrir powershell en tant que admin

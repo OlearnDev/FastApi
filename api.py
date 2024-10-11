@@ -35,8 +35,8 @@ async def read_component(number:int, text:Optional[str]):
 #}
 
 
-@app.post("/position/")
-async def make_position(coord: Coord):
+@app.post("/position/{priority}")
+async def make_position(priority:int, coord: Coord):
 	# db write completed
-	return {"new_coord" : coord.model_dump()} 
+	return {"priority" : priority,"new_coord" : coord.model_dump()} 
  
